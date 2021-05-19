@@ -58,6 +58,9 @@ const BuyForm = ({ selectedCourse }) => {
           <br />
           <br />
           <input type="submit" value="Go to payment" />
+          <br />
+          <br />
+          <br />
         </div>
       </form>
     </div>

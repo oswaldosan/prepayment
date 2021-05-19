@@ -59,7 +59,7 @@ h2 {
 
 .logo {
   position: absolute;
-  width: 100px;
+  width: 120px;
   top: 15px;
   left: 150px;
 }
@@ -107,4 +107,36 @@ h2 {
 
 .leftAligned {
   text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+  h2 {
+    line-height: 40px;
+    color: #1e3850;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.88px;
+  }
+  .logo {
+    position: absolute;
+    width: 120px;
+    top: 15px;
+    left: 50%;
+    margin-left: -60px;
+  }
+  .contactTopbar {
+    position: absolute;
+    top: 125px;
+    right: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+  }
+  .box {
+    background: #f4f4f4;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+  }
 }
