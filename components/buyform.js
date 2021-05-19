@@ -19,27 +19,46 @@ const BuyForm = ({ selectedCourse }) => {
   return (
     <div className="theForm">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <label>Full Name</label> <br />
-        <input defaultValue="name" {...register("fullName")} />
-        <br />
-        <br />
-        <label>Email</label> <br />
-        <input defaultValue="email" type="mail" {...register("email")} />
-        <br />
-        <br />
-        <label>Phone Number</label> <br />
-        <input defaultValue="phone" {...register("phone")} />
-        <br />
-        <br />
-        <label>Country</label> <br />
-        <input defaultValue="country" {...register("country")} />
-        <br />
-        <br />
-        <label>State</label> <br />
-        <input defaultValue="state" {...register("state")} />
-        <br />
-        <br />
-        <input type="submit" value="Go to payment" />
+        <div className="leftAligned">
+          <label>Full Name</label> <br />
+          <input
+            type="text"
+            placeholder="Type your full name"
+            {...register("fullName")}
+          />
+          <br />
+          <br />
+          <label>Email</label> <br />
+          <input
+            type="text"
+            type="mail"
+            placeholder="example@domain.com"
+            {...register("email")}
+          />
+          <br />
+          <br />
+          <label>Phone Number</label> <br />
+          <input
+            type="text"
+            placeholder="+1 XXX-XXXXX"
+            {...register("phone")}
+          />
+          <br />
+          <br />
+          <label>Country</label> <br />
+          <input
+            type="text"
+            placeholder="Country of residence"
+            {...register("country")}
+          />
+          <br />
+          <br />
+          <label>State</label> <br />
+          <input type="text" placeholder="State" {...register("state")} />
+          <br />
+          <br />
+          <input type="submit" value="Go to payment" />
+        </div>
       </form>
     </div>
   );

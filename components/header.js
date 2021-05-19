@@ -4,7 +4,7 @@ const Header = () => {
       <div className="logo">
         <img src="/logordahe.png"></img>
       </div>
-      <div class="contactTopbar">
+      <div className="contactTopbar">
         <a href="tel:+50499563037">Contact Us +504 99563037</a>
       </div>
     </div>

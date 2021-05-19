@@ -83,6 +83,28 @@ h2 {
 }
 
 .theForm {
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.theForm form {
+  text-align: center;
+}
+
+.theForm input {
+  margin-top: 15px;
+  height: 35px;
+  padding-left: 5px;
+  width: 250px;
+}
+.theForm label {
+  color: #1e3850;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.leftAligned {
   text-align: left;
 }

@@ -21,7 +21,7 @@ const Post = () => {
         <h1>
           <span>Total:</span> $100
         </h1>
-        <BuyForm selectedCourse={theCourse}></BuyForm>
+        <BuyForm selectedCourse={courseid}></BuyForm>
       </div>
       <Footer></Footer>
     </>
