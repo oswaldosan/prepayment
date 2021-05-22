@@ -1,0 +1,8 @@
+.packageData p {
+  font-size: 22px;
+  padding: 0px;
+  text-align: right;
+}
+.packageData p span {
+  font-weight: 600;
+}

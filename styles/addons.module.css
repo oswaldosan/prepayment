@@ -1,0 +1,98 @@
+.addonsBox {
+  padding: 30px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+
+.addonsBox h1 {
+  font-family: "Playfair Display";
+  font-weight: 300;
+}
+
+.addonsBoxGrid {
+  margin-top: 50px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-bottom: 20px;
+}
+
+.addonsBoxGrid .boxContent {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.boxContent h1 {
+  font-size: 24px;
+}
+
+.boxContent p {
+  font-family: Lato;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+.boxPriceBook {
+  padding: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.boxPriceBook h2 {
+  margin-top: 5px;
+  font-size: 34px;
+}
+
+.boxPriceBook h4 {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #183353aa;
+  text-transform: uppercase;
+  font-family: Lato;
+}
+
+.addonBtn {
+  width: 73%;
+  margin: 0 auto;
+  background: #183453;
+  border-radius: 4px;
+  color: #fff;
+  padding: 9px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.addonBtn:hover {
+  width: 73%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 4px;
+  color: #183453;
+  padding: 9px;
+  cursor: pointer;
+  border: 1px solid #183453;
+}
+
+.extraRounded {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 128px;
+  margin: 0 auto;
+  text-align: center;
+  color: #d92b9d;
+  font-family: Lato;
+  border: 2px solid #d92b9d;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.starting {
+  color: #183453;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 18px;
+}
