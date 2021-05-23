@@ -191,8 +191,11 @@ h2 span {
   font-size: 12px;
 }
 
-.addonsClass p {
+.addonsClass {
   display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-end;
 }
 
 .addonsClass img {

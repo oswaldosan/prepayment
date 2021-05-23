@@ -2,7 +2,7 @@ import useAppContext from "../context/context";
 import styles from "../styles/packagedata.module.css";
 
 const PackageData = ({ course }) => {
-  const { guests, addOns } = useAppContext();
+  const { guests, addOns, setAddons } = useAppContext();
 
   const prices = {
     adults: 100,
@@ -30,6 +30,17 @@ const PackageData = ({ course }) => {
     return totalAdults + totalChilds + addonsPrice;
   }
 
+  //delete Addon
+  function deleteAddon(addon) {
+    const deleteArray = addOns;
+
+    const index = addOns.findIndex((x) => x.title === addon.title);
+    console.log(index);
+
+    // const NuevoArray = deleteArray.splice(index, 1);
+    //setAddons(NuevoArray);
+  }
+
   return (
     <div className={styles.packageData}>
       <h2>
@@ -40,12 +51,10 @@ const PackageData = ({ course }) => {
       {addOns.map((add, i) => {
         return (
           <div key={i} className="addonsClass">
-            <p>
-              <div className="deletebtn">
-                <img src="/delete.png"></img>
-              </div>{" "}
-              {add.title} - <span>${add.price}</span>
-            </p>
+            <div className="deletebtn" onClick={() => deleteAddon(add)}>
+              <img src="/delete.png"></img>
+            </div>{" "}
+            {add.title} - <span>${add.price}</span>
           </div>
         );
       })}
